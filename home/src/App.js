@@ -6,7 +6,7 @@ import BookSearch from "./Elements/BookSearch";
 import BookList from "./Elements/BookList";
 import * as BooksAPI from "./BooksAPI";
 
-class BooksApp extends React.Elements {
+class BooksApp extends React.component {
  constructor(props){
     super(props);
     this.handleChangeShelf = this.handleChangeShelf.bind(this);
@@ -37,7 +37,7 @@ class BooksApp extends React.Elements {
   render() {
     return (
       <div className="app">
-        <Route exact path="/" render={() => 
+        <Route exact path="/" render={() =>
         <BookList books={this.state.books} booksOnShelf={this.handleChangeShelf}/>} />
         <Route
           path="/search"
