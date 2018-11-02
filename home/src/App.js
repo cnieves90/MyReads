@@ -6,7 +6,7 @@ import BookSearch from "./Elements/BookSearch";
 import BookList from "./Elements/BookList";
 import * as BooksAPI from "./BooksAPI";
 
-class BooksApp extends React.component {
+class BooksApp extends React.Component {
  constructor(props){
     super(props);
     this.handleChangeShelf = this.handleChangeShelf.bind(this);
