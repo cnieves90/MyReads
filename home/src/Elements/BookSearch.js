@@ -1,9 +1,9 @@
-import React, { Elements } from 'react'
+import React, { Component } from 'react'
 import BookItems from './BookItems'
 import * as BooksAPI from '../BooksAPI'
 import { Link } from 'react-router-dom';
 
-class BookSearch extends Elements {
+class BookSearch extends Component {
   state = {
     query: "",
     booksShowing: []
@@ -55,7 +55,7 @@ class BookSearch extends Elements {
               this.state.booksShowing.map(newBook => {
                 let shelf = 'none'
 
-                  books.map(book => 
+                  books.map(book =>
                   (this.props.BookShelf.filter(b => b.id).map(b => book.shelf =b.shelf)));
 
                 return (

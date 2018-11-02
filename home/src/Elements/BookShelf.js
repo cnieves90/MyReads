@@ -1,7 +1,7 @@
-import React, { Elements } from 'react'
+import React, { Component } from 'react'
 import BookItems from './BookItems'
 
-class BookShelf extends Elements {
+class BookShelf extends Component {
    render() {
 
    const books = this.props.books

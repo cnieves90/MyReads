@@ -1,10 +1,10 @@
-import React, { Elements } from 'react'
+import React, { Component } from 'react'
 
-class BookItems extends Elements {
+class BookItems extends Component {
     state = {}
 
     render() {
-        
+
       const book = this.props.book
       const booksOnShelf = this.props.booksOnShelf
       const currentShelf = this.props.currentShelf
